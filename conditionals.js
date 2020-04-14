@@ -1,11 +1,14 @@
-const temperature = 27;
 
-if (temperature < 0) {
-  console.log("Make sure you pick out a scarf!");
-} else if (temperature < 15) {
-  console.log("Short sleeves won't cut it!");
-} else {
-  console.log("Short sleeves are fine.");
+var catSays = function(max) {
+  var catMessage = "";
+  for (var i = 0; i < max; i++) {
+    catMessage += "meow ";
+  }
+  return catMessage;
+};
+
+function helloCat(callbackFunc) {
+  return "Hello " + callbackFunc;
 }
 
-console.log("Now you're ready to go outside!");
+console.log(helloCat(catSays(14)));
